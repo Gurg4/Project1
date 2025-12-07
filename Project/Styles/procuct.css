@@ -1,0 +1,223 @@
+main {
+  display: flex;
+  gap: 60px;
+  padding: 40px 60px;
+  max-width: 1400px;
+  margin-top: 100;
+  background-color: #f5f5f5;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left img {
+  width: 100%;
+  height: auto;
+  background-color: #e0e0e0;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.down {
+  background-color: white;
+  padding: 24px;
+  border-radius: 4px;
+}
+
+.down p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.right {
+  flex: 1;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.top1 h1 {
+  font-size: 32px;
+  font-weight: 400;
+  color: #333;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.top2 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.top2 p {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}
+
+.top2 p:first-child {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.color {
+  margin-top: 8px;
+}
+
+.color p {
+  font-size: 14px;
+  color: #333;
+  margin: 0 0 8px 0;
+}
+
+.quantity {
+  margin-top: 16px;
+}
+
+.quantity p {
+  font-size: 14px;
+  color: #333;
+  margin: 0 0 12px 0;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+  width: fit-content;
+  background-color: white;
+  font-size: 16px;
+  color: #333;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.middle .top2 h2,
+.bottom2 h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 16px 0;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.middle .top2 p,
+.bottom2 p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666;
+  margin: 0;
+  background-color: #e8e8e8;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.bottom2 {
+  display: flex;
+  flex-direction: column;
+}
+
+button.add-to-cart {
+  width: 100%;
+  padding: 14px 24px;
+  background-color: #5f7d7d;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 24px;
+}
+
+button.add-to-cart:hover {
+  background-color: #4d6666;
+}
+
+button.buy-now {
+  width: 100%;
+  padding: 14px 24px;
+  background-color: #4a4a4a;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 12px;
+}
+
+button.buy-now:hover {
+  background-color: #333;
+}
+
+@media (max-width: 1200px) {
+  main {
+    padding: 40px 40px;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 30px;
+  }
+  
+  .left, .right {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .left {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 30px 20px;
+    gap: 30px;
+  }
+  
+  .top1 h1 {
+    font-size: 26px;
+  }
+  
+  .down {
+    padding: 20px;
+  }
+  
+  .middle .top2 p, .bottom2 p {
+    padding: 16px;
+  }
+}
